@@ -4,4 +4,5 @@
     echo "Its a number";
    else
     echo "Its not a number";
+
 ?>
