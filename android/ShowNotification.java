@@ -4,7 +4,9 @@ Intent intent = new Intent();
                 .setTicker( "This is Title" )
                 .setContentTitle( "This is Content Titile" )
                 .setContentText( "This is content text" )
-                .setSmallIcon( R.drawable.ic_launcher_foreground )
+                .setSmallIcon( R.drawable.ic_android_black_24dp )
+                .addAction( R.drawable.ic_android_black_24dp,"Action 1",pIntent )
+                .addAction( R.drawable.ic_android_black_24dp,"Action 2",pIntent )
                 .setContentIntent(pIntent).getNotification();
         noti.flags = Notification.FLAG_AUTO_CANCEL;
         NotificationManager nm = (NotificationManager)getSystemService( NOTIFICATION_SERVICE );
