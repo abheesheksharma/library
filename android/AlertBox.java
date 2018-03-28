@@ -24,7 +24,6 @@
             AlertDialog alert = a_builder.create();
             alert.setTitle( "Alert!!!" );
             alert.show();
-            super.onBackPressed();
-
+            //super.onBackPressed();
         }
     }
