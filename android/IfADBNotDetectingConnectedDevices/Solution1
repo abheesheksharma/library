@@ -1,0 +1,6 @@
+Otherwise from the command line, you can reset it with the following 2 commands:
+
+adb kill-server
+then
+
+adb start-server
