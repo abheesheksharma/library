@@ -1,4 +1,4 @@
-package tkpaytmspoof.onethinkcode.googlemapapi;
+package tk.onethinkcode.googlemapapi;
 
 import android.content.pm.PackageManager;
 import android.location.Address;
@@ -6,18 +6,9 @@ import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -51,8 +42,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-                double latitude = location.getLatitude();
-                double longitude = location.getLongitude();
+                mMap.clear();
+                final double latitude = location.getLatitude();
+                final double longitude = location.getLongitude();
                 LatLng latLng = new LatLng(latitude, longitude);
                 List<Address> address = null;
                 Geocoder geocoder = new Geocoder(getApplicationContext());
