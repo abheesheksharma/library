@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-                mMap.clear();
+                mMap.clear(); // This is for remove old location markers
                 final double latitude = location.getLatitude();
                 final double longitude = location.getLongitude();
                 LatLng latLng = new LatLng(latitude, longitude);
