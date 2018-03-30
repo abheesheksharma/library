@@ -1,0 +1,7 @@
+change this
+
+Manifest.permission.ACCESS_FINE_LOCATION
+
+into this
+
+android.Manifest.permission.ACCESS_FINE_LOCATION
