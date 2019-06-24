@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/3478840/google-maps-api-drop-a-new-pin/3478987#3478987
+
+http://www.geocodezip.com/v3_example_click2add_infowindow.html
+
+https://stackoverflow.com/questions/7916438/allow-user-to-place-marker-on-a-google-map
